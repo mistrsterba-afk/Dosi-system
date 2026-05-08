@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOSI Transport s.r.o. - Systém</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="side-panel" id="side-panel">
+            <div class="panel-header">DOSI TRANSPORT</div>
+            <nav class="sheets-list">
+                <!-- Úvodní strana je teď první a aktivní -->
+                <div class="sheet-item active" data-section="Úvodní strana">Úvodní strana</div>
+                <div class="sheet-item" data-section="Přepravy">Přepravy</div>
+                <div class="sheet-item" data-section="Skladování">Skladování</div>
+                <div class="sheet-item" data-section="Autopark">Autopark</div>
+                <div class="sheet-item" data-section="Zaměstnanci">Zaměstnanci</div>
+                <div class="sheet-item" data-section="Fakturace">Fakturace</div>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <div class="company-logo-container">
+                        <img src="dositransport.png" alt="DOSI Logo" class="company-logo">
+                    </div>
+                    <div class="nav-control-group">
+                        <button class="menu-icon-large" id="menu-toggle">☰</button>
+                        <div class="section-label-minimal" id="current-page-title">Úvodní strana</div>
+                    </div>
+                </div>
+            </header>
+            <main class="sheet-area" id="main-area"></main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
